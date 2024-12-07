@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  gcode-compare:
+    build: .
+    ports:
+      - "8100:8100"
+    volumes:
+      - ./logs:/root/logs
+    environment:
+      - GIN_MODE=release
+    restart: unless-stopped
+
+networks:
+  host-network:
+    driver: host

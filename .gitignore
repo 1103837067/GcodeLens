@@ -1,0 +1,36 @@
+# 临时文件
+tmp/
+*.tmp
+*.log
+
+# IDE相关
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 编译生成的文件
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Air工具相关
+.air.toml
+build-errors.log
+
+# 依赖目录
+vendor/
+node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 测试文件
+*_test.go
+testdata/
+
+# 环境变量文件
+.env
+.env.local
